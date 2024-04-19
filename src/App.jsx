@@ -1,7 +1,8 @@
+import { Button } from "react-bootstrap"
 import "./App.css"
 
 function App() {
-    return <h1>Game project</h1>
+    return <Button variant="primary">Click me</Button>
 }
 
 export default App
