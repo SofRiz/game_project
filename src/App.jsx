@@ -1,8 +1,14 @@
-import { Button } from "react-bootstrap"
 import "./App.css"
+import NavigationBar from "./components/NavigationBar"
+import Home from "./pages/Home"
 
 function App() {
-    return <Button variant="primary">Click me</Button>
+    return (
+        <>
+            <NavigationBar />
+            <Home />
+        </>
+    )
 }
 
 export default App
