@@ -14,6 +14,7 @@ const NavigationBar = () => {
                         className="d-inline-block align-top"
                         alt="Logo Universae"
                     />
+                    <img src="" alt="" />
                 </Navbar.Brand>
             </Container>
         </Navbar>
