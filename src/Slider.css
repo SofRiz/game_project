@@ -1,0 +1,29 @@
+.carousel {
+
+
+    display: grid;
+
+}
+
+.carousel-inner {}
+
+.carousel-inner :active {}
+
+
+.carousel-inner img {}
+
+.carousel-indicators {
+    background-color: black;
+}
+
+.carousel-control-prev {
+    /* background-color: black; */
+
+
+}
+
+.carousel-control-next {
+    /* background-color: black; */
+
+
+}

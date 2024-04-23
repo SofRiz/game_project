@@ -1,0 +1,29 @@
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: #134c8f;
+
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #45b8ac;
+}
+
+.iconos a i {
+    color: #45b8ac;
+    font-size: 35px;
+}
+
+.iconos a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.iconos a:hover i {
+    color: #45b8ac;
+}
