@@ -1,34 +1,36 @@
-.container__logo{
+.container__logo {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
     filter: drop-shadow(0px 7px 21px #b6e1f9);
     animation: rotar 5s linear infinite;
 }
 
-@keyframes rotar{
-    from{
+@keyframes rotar {
+    from {
         transform: rotateY(180deg);
     }
-    to{
+
+    to {
         transform: rotateY(-180deg);
     }
 }
 
-.contenedor{
+.contenedor {
     position: relative;
-    max-width: 1600px;
+    max-width: auto;
     height: 70vh;
     grid-template-rows: auto 1fr auto;
     justify-items: center;
     align-content: center;
 }
 
-.columna{
+.columna1,
+.columna2 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,14 +45,31 @@
     cursor: pointer;
 }
 
-.img{
+.columna1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.columna2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+}
+
+.fila2 {
+    margin-bottom: 0px;
+}
+
+
+
+.img {
     margin-left: -35px;
-    width: 115%;
+    width: 140%;
     height: 100%;
     object-fit: contain;
 }
 
-.text{
+.text {
     position: absolute;
     left: -500px;
     bottom: 0;
@@ -58,7 +77,7 @@
     height: 50px;
     text-align: center;
     line-height: 50px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
     z-index: 3;
@@ -66,7 +85,11 @@
     transition: all 400ms ease-in-out;
 }
 
-.columna:hover > .text{
+.columna1:hover>.text {
+    left: 0px
+}
+
+.columna2:hover>.text {
     left: 0px
 }
 
@@ -77,9 +100,8 @@
 
 
 /*Pagina del juego*/
-.games__title{
+.games__title {
     text-align: center;
     width: 58%;
     margin: 0px auto;
 }
-

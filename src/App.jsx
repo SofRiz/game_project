@@ -20,7 +20,7 @@ return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 
 function App() {
 
-   
+
     return (
       <>
         <div class="app">
@@ -47,6 +47,9 @@ function App() {
     );
     
     
+       
+
+
 }
 
 export default App
