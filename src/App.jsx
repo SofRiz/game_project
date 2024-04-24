@@ -15,7 +15,7 @@ function App() {
                 <main class="main">
                     <Home />
                     {/*<div class="double-column">
-                         Colocar primer componente aqui
+                        Colocar primer componente aqui
                         <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
                         <Carrusel />
                     </div>*/}
