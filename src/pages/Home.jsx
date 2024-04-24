@@ -1,8 +1,15 @@
-import React from "react"
-import { dataGame } from "../utils/data"
+import { dataGame } from "../utils/data";
+import Background from "../components/Background/Background";
 
 const Home = () => {
-    return <h1>{dataGame.title}</h1>
-}
+  return (
+    <> 
+    <Background id="bgparticles" />
+      <h1>{dataGame.title}</h1>
+      
+     
+    </>
+  );
+};
 
-export default Home
+export default Home;
