@@ -1,22 +1,15 @@
-import React from "react"
-import ascensor from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_1.png"
-import { dataGame } from "../utils/data"
+import { dataGame } from "../utils/data";
+import Background from "../components/Background/Background";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>Welcome to the Home Page!</h1>
-            {dataGame.map((game) => (
-                <div key={game.id}>
-                    <h2>{game.titulo}</h2>
-                    <p>{game.descripcion}</p>
-                    <p>Unidad: {game.unidad}</p>
-                    <p>Grado: {game.grado}</p>
-                    <img src={require(game.imagenes[0])} alt="First Image" />
-                </div>
-            ))}
-        </div>
-    )
-}
+  return (
+    <> 
+    <Background id="bgparticles" />
+      <h1>{dataGame.title}</h1>
+      
+     
+    </>
+  );
+};
 
-export default Home
+export default Home;

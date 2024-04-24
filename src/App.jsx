@@ -7,11 +7,20 @@ import Carrusel from "./components/carrusel"
 
 
 
+
+
+
+
+
+
 function App() {
+
+   
     return (
         <>
             <div class="app">
-                <NavigationBar />
+                <NavigationBar /> 
+                <Home />
                 <main class="main">
                     <div class="double-column">
                         {/* Colocar primer componente aqui */}
@@ -23,6 +32,8 @@ function App() {
             </div>
         </>
     )
+    
+    
 }
 
 export default App
