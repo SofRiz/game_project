@@ -1,5 +1,11 @@
 import "../footer.css";   // Path: Footer.jsx
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/ " />
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaTwitch } from "react-icons/fa6";
+import { FaLinkedi } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa6";
 
 
 function Footer() {
@@ -7,13 +13,13 @@ function Footer() {
     return (
         <section className="footer">
             <div class="iconos">
-                <a href="https://www.facebook.com/UNIVERSAE/"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/_universae/?hl=es"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.youtube.com/c/UNIVERSAE_FP"   > <i class="fa fa-youtube-play"></i> </a>
-                <a href="https://www.twitch.tv/universae_fp"><i class="fa fa-twitch"></i></a>
-                <a href="https://www.linkedin.com/school/universae"><i class="fa fa-linkedin-square"></i></a>
-                <a href="https://twitter.com/_Universae"><i class="fa fa-twitter"></i></a>
-                <a href="https://universae.com"><i class="fa fa-google"></i></a>
+                <a href="https://www.facebook.com/UNIVERSAE/"><FaFacebook /></a>
+                <a href="https://www.instagram.com/_universae/?hl=es"><FaInstagram /></a>
+                <a href="https://www.youtube.com/c/UNIVERSAE_FP"   > <FaYoutube /></a>
+                <a href="https://www.twitch.tv/universae_fp"><FaTwitch /></a>
+                <a href="https://www.linkedin.com/school/universae"><FaLinkedi /></a>
+                <a href="https://twitter.com/_Universae"><FaTwitter /></a>
+                <a href="https://universae.com"><FaGoogle /></a>
             </div>
         </section>
     )

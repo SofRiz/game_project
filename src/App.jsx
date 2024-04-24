@@ -13,9 +13,14 @@ function App() {
                 <main class="main">
                     <div class="double-column">
                         {/* Colocar primer componente aqui */}
-                        <p>lore lore macu macu</p>
+                        <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
                         <Carrusel />
                     </div>
+                    {/* <div class="double-column">
+                       
+                        <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
+                        <Slider />
+                    </div> */}
                 </main>
                 <Footer />
             </div>
