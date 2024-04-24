@@ -1,7 +1,7 @@
 import "./App.css"
 import NavigationBar from "./components/NavigationBar"
 import Home from "./pages/Home"
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/footer/Footer"
 import Carrusel from "./components/carrusel"
 
 
