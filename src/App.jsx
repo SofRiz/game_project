@@ -2,7 +2,6 @@ import "./App.css"
 import NavigationBar from "./components/NavigationBar"
 import Home from "./pages/Home"
 import Footer from "./components/Footer/Footer"
-import Slider from "./components/Slider"
 import Carrusel from "./components/carrusel"
 
 
@@ -19,11 +18,6 @@ function App() {
                         <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
                         <Carrusel />
                     </div>
-                    {/* <div class="double-column">
-
-                        <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
-                        <Slider />
-                    </div> */}
                 </main>
                 <Footer />
             </div>
