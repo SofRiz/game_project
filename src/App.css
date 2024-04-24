@@ -37,5 +37,18 @@
     width: 100%;
     position: absolute;
 
-
 }
+
+.contador{
+    background-color: aliceblue;
+    border-radius: 800px;
+    width: 6em;
+    display: inline-block;
+    font-family: "Roboto Mono" ;
+    font-size: 25px;
+}
+.number{
+    margin-right: 10px;
+    display: inline-block;
+}
+
