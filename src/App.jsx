@@ -25,8 +25,7 @@ function App() {
       <>
         <div class="app">
           <NavigationBar />
-          <Home />
-          <main class="main">
+            <main class="main">
             <div class="double-column">
               {/* Colocar primer componente aqui */}
               <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
