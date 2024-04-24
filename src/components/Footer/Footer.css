@@ -8,14 +8,19 @@
 .iconos {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #45b8ac;
+    color: #fff;
 }
 
-.iconos a i {
-    color: #45b8ac;
+.a1,
+.a2,
+.a3,
+.a4,
+.a5,
+.a6,
+.a7 {
+    color: #fff;
     font-size: 35px;
 }
 
@@ -24,6 +29,13 @@
     margin: 0 10px;
 }
 
-.iconos a:hover i {
+.a1:hover,
+.a2:hover,
+.a3:hover,
+.a4:hover,
+.a5:hover,
+.a6:hover,
+.a7:hover {
     color: #45b8ac;
+    font-size: 45px;
 }

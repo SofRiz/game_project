@@ -4,7 +4,8 @@ import Ascensor2 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/As
 import Ascensor3 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_3.png";
 import Ascensor4 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_4.png";
 import Ascensor5 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_5.png";
-import "../Slider.css";
+import "../components/carrusel/Slider.css";
+
 
 
 
