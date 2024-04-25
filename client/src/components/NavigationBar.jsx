@@ -5,13 +5,11 @@ import logo from "../assets/Logo-Color.ico"
 const NavigationBar = () => {
     return (
         <Navbar>
-            <Container>
+            <Container className="container__logo">
                 <Navbar.Brand href="/">
                     <img
                         src={logo}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
+                        className="d-inline-block align-top logo"
                         alt="Logo Universae"
                     />
                     <img src="" alt="" />
