@@ -3,6 +3,10 @@
     margin-left: 10px;
 }
 
+.container{
+    background-color: transparent;
+}
+
 .logo {
     width: 100px;
     height: 100px;
