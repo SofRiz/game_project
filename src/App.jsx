@@ -2,7 +2,7 @@ import "./App.css"
 import NavigationBar from "./components/NavigationBar"
 import Home from "./pages/Home"
 import Footer from "./components/footer/Footer"
-import Carrusel from "./components/carrusel"
+import {Carrusel, JustifiedExample} from "./components/carrusel"
 
 function App() {
 
@@ -13,12 +13,10 @@ function App() {
                 <NavigationBar />
 
                 <main class="main">
-                    <Home />
-                    {/*<div class="double-column">
-                        Colocar primer componente aqui
-                        <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
+                    <div class="double-column">
+                        <JustifiedExample/>
                         <Carrusel />
-                    </div>*/}
+                    </div>
                 </main>
                 <Footer />
             </div>
