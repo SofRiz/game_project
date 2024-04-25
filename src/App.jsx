@@ -5,18 +5,11 @@ import Footer from "./components/footer/Footer"
 import Carrusel from "./components/carrusel"
 import {useSpring, animated} from "react-spring"
 import ProgressBarAnimation from "./components/ProgressBar/ProgressBarAnimation"
+import Number from "./components/CountNumber/Count"
 
 
-function Number ({ n }) {
-    const { number } = useSpring({
-from: { number: 0 },
-number: n,
-delay: 200,
-config: { mass: 1, tension: 20, friction: 10 },
-});
 
-return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
-}
+
 
 function App() {
 
@@ -25,13 +18,18 @@ function App() {
       <>
         <div class="app">
           <NavigationBar />
-            <main class="main">
+          <main class="main">
+            {/* <Home />*/}
             <div class="double-column">
-              {/* Colocar primer componente aqui */}
-              <p>lore ipsumlore ipsum lore ipsumlore ipsum</p>
+              <h1 class="line-1 anim-typewriter">
+                Título Juego
+              </h1>
+
               <Carrusel />
             </div>
             <label className="contador">
+              {" "}
+              Duración:
               <span className="number">
                 {" "}
                 <Number n={10} />{" "}
@@ -40,7 +38,7 @@ function App() {
             </label>
             <ProgressBarAnimation />
           </main>
-          
+
           <Footer />
         </div>
       </>

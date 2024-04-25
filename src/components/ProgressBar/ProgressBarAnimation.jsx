@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import "./ProgressBarAnimation.css"
 
 const ProgressBarAnimation = () => {
   const [greenWidth, setGreenWidth] = useState(0);
@@ -9,9 +10,9 @@ const ProgressBarAnimation = () => {
   useEffect(() => {
     const animateProgress = (targetWidth, setWidth) => {
       let currentWidth = 0;
-      const duration = 2000; // Duración en milisegundos (2 segundos)
+      const duration = 2000; 
       const interval = setInterval(() => {
-        currentWidth += (targetWidth / duration) * 10; // Incremento por cada 10 milisegundos
+        currentWidth += (targetWidth / duration) * 10;
         setWidth(currentWidth);
         if (currentWidth >= targetWidth) {
           clearInterval(interval);
@@ -19,32 +20,37 @@ const ProgressBarAnimation = () => {
       }, 10);
     };
 
-    animateProgress(100, setGreenWidth); // Animar barra verde al 100%
-    animateProgress(1, setYellowWidth); // Animar barra amarilla al 1%
-    animateProgress(1, setRedWidth); // Animar barra roja al 1%
+    animateProgress(100, setGreenWidth); 
+    animateProgress(3, setYellowWidth); 
+    animateProgress(3, setRedWidth); 
   }, []);
 
   return (
     <div className="container">
       <h2>Nivel de Dificultad</h2>
+      <div className="progressBarWrapper">
       <ProgressBar
-        className="mb-3"
         now={greenWidth}
         variant="success"
         label={`${greenWidth.toFixed(0)}%`}
+        
       />
+      </div>
+      <div className="progressBarWrapper">
       <ProgressBar
-        className="mb-3"
-        now={yellowWidth}
+       now={yellowWidth}
         variant="warning"
-        label={`${yellowWidth.toFixed(0)}%`}
+        
+        
       />
+      </div>
+      <div className="progressBarWrapper">
       <ProgressBar
-        className="mb-3"
         now={redWidth}
         variant="danger"
-        label={`${redWidth.toFixed(0)}%`}
+      
       />
+      </div>
     </div>
   );
 };
