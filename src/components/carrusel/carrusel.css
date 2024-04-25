@@ -1,5 +1,11 @@
+:root{
+    --bs-border-color: #b6e1f9;
+}
+
 .carrusel {
     display: flex;
+    flex-direction: row;
+    padding-left: 10px;
     width: 100%;
     height: 430px;
 }
@@ -17,4 +23,42 @@
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+.tabla__contenedor{
+    margin-top: 18px;
+    height: 395px;
+    background-color: white;
+    border: 4px solid #b6e1f9;
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+.tabla{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-link{
+    font-size: 22px;
+    color: black;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.nav-item:hover{
+    background-color: #e3e3e3;
+    font-weight: 500;
+}
+
+.tabla__containerinfo{
+    background-color: white;
+}
+
+.tabla__info{
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
 }
