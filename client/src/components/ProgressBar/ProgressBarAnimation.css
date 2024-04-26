@@ -5,11 +5,12 @@ h2{
 }
 
 .container{
-    width: 180px;
+    width: 600px;
     margin: 20px;
     padding-bottom: 5px; 
     border-radius: 5px;
     background-color: black;
+   
    
 }
 
