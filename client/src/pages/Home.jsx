@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import Image1 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_2.png"
+import Image1 from "../assets/Interfaces/iconosCortados/Ascensor0.png"
 // import Image3 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/EPIS/EPIS_2.png"
 // import Image2 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Embarque/Embarque_1.png"
 // import Image4 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Extinciขn/Extinciขn_3.png"
@@ -33,7 +33,7 @@ const Home = () => {
                 <Link key={game._id} to={`/${game._id}`}>
                     <Row className="fila1">
                         <Col className="columna1">
-                            <div className="p-3">
+                            <div>
                                 <img
                                     src={Image1}
                                     className="img"
