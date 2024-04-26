@@ -21,7 +21,6 @@ const Home = () => {
         try {
             const response = await gameService.getGames()
             setGames(response.data)
-            console.log(response.data)
         } catch (error) {
             console.log("Error fetching games", error)
         }
