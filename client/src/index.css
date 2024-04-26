@@ -1,5 +1,7 @@
 .container {
     background-color: transparent;
+    width: auto;
+    margin: 0;
 }
 
 .container__logo {
@@ -25,50 +27,43 @@
 }
 
 .contenedor {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    max-width: auto;
-    height: 70vh;
+    justify-content: center;
+    margin: 0 auto;
+    height: auto;
     grid-template-rows: auto 1fr auto;
     justify-items: center;
     align-content: center;
 }
 
-.columna1,
-.columna2 {
+.columna1 {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 350px;
     height: 250px;
     margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     padding: 0;
     border: 4px solid #b6e1f9;
     overflow: hidden;
     cursor: pointer;
 }
 
-.columna1 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
 
-.columna2 {
-    margin-top: 15px;
-    margin-bottom: 0px;
 
-}
-
-.fila2 {
-    margin-bottom: 0px;
+.fila1 {
+    margin-bottom: 20px;
 }
 
 
 
 .img {
-    margin-left: -35px;
-    width: 140%;
+    width: 100%;
     height: 100%;
     object-fit: contain;
 }
@@ -81,7 +76,7 @@
     height: 50px;
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
     z-index: 3;
@@ -108,4 +103,47 @@
     text-align: center;
     width: 58%;
     margin: 0px auto;
+}
+
+/*responsive*/
+
+
+@media (max-width: 430px) {
+    .navbar>.container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        align-items: center;
+        flex-wrap: inherit;
+        /* width: 100%; */
+
+    }
+
+    .navbar-expand {
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .navbar-brand {
+        margin-right: 10%;
+    }
+
+    .footer {
+        width: 65%;
+        margin-top: 0px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+
+
+    }
 }
