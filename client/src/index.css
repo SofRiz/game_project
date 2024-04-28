@@ -132,9 +132,10 @@
 
     .footer {
         width: 65%;
-        margin-top: 0px;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        /* margin-top: 0px; */
+        margin: 10px auto;
+        /* margin-bottom: 10px; */
+        /* padding-top: 5px; */
     }
 
     .iconos {
@@ -145,5 +146,31 @@
         align-items: center;
 
 
+    }
+
+    .line-1 {
+        font-size: 150%;
+        margin-left: -17%;
+    }
+
+    .double-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cont-anim {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Button .btn {
+        left: 0px;
+        margin-bottom: 2rem;
     }
 }
