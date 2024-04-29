@@ -75,6 +75,20 @@ body {
 
 }
 
+.titleGames {
+    font-family: "Roboto Mono";
+    font-size: 25px;
+    color: #69ffff;
+    text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
 .line-1 {
     position: relative;
     top: 20%;
@@ -89,12 +103,11 @@ body {
     color: #69ffff;
     text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
 
-
 }
 
 /* Animation */
 .anim-typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 2s steps(44) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
