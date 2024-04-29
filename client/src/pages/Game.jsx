@@ -1,28 +1,25 @@
-import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation"
-import { Carrusel, JustifiedExample } from "../components/carrusel"
-import gameService from "../services/game.service"
-import Number from "../components/CountNumber/Count"
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation";
+import { Carrusel, JustifiedExample } from "../components/carrusel";
+import gameService from "../services/game.service";
+import Number from "../components/CountNumber/Count";
 
 const Game = () => {
-  const [game, setGame] = useState(null)
-  const { game_id } = useParams()
+  const [game, setGame] = useState(null);
+  const { game_id } = useParams();
   const [titleLoaded, setTitleLoaded] = useState(false);
 
   useEffect(() => {
     gameService
       .getOneGame(game_id)
       .then(({ data }) => setGame(data))
-      .catch((error) => console.log(error))
-  }, [game_id])
+      .catch((error) => console.log(error));
+  }, [game_id]);
 
   if (!game) {
-    return <p>Loading.....</p>
+    return <p>Loading.....</p>;
   }
-
-
 
   return (
     <main className="main">
@@ -47,12 +44,14 @@ const Game = () => {
           </label>
         </div>
         <div className="Button">
-          <div className="btn"> <a href="">Comenzar</a>
+          <div className="btn">
+            {" "}
+            <a href="">Comenzar</a>
           </div>
         </div>
       </div>
     </main>
   );
-}
+};
 
-export default Game
+export default Game;

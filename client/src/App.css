@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 body {
     background-color: #0a2648;
 }
@@ -59,11 +61,10 @@ body {
 }
 
 .contador {
-    border-radius: 800px;
     padding: 10px;
     display: flexbox;
     align-items: center;
-    font-family: "Roboto Mono";
+    font-family: "Anonymous pro", monospace;
     font-size: 25px;
     color: #69ffff;
 
@@ -72,6 +73,9 @@ body {
 .number {
     margin-right: 10px;
     display: inline-block;
+    
+    
+
 
 }
 
@@ -96,39 +100,29 @@ body {
     margin: 0 auto;
     font-size: 180%;
     text-align: center;
-    white-space: wrap;
+    white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: "Roboto Mono";
+    font-family: "Anonymous pro", monospace;
     color: #69ffff;
     text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
-
+    border-right: 2px solid #69ffff;
 }
 
-/* Animation */
+
 .anim-typewriter {
-    animation: typewriter 2s steps(44) 1s 1 normal both,
+    animation: typewriter 8s steps(88) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 24em;
-    }
+    from {width: 0;}
+    to {width: 24em;}
 }
 
 @keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-
-    to {
-        border-right-color: transparent;
-    }
+    from {border-right-color: #69ffff;}
+    to { border-right-color: transparent;}
 }
 
 .Button .btn {
@@ -166,6 +160,7 @@ body {
     z-index: 1;
     transition: 0.5s;
     backdrop-filter: blur(15px);
+    font-family: "Anonymous pro", monospace;
 }
 
 .Button .btn:hover a {
