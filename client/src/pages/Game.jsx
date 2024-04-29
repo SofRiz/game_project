@@ -26,8 +26,8 @@ const Game = () => {
 
     return (
       <main className="main">
-        <h1 className="line-1 anim-typewriter">{game.tituloHome}</h1>
-        <div className="double-column">
+      <h1 className="line-1 anim-typewriter">{game.tituloHome}</h1>
+       <div className="double-column">
           <JustifiedExample />
           <Carrusel />
         </div>
