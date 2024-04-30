@@ -11,8 +11,7 @@ body {
     grid-template-areas:
         "header"
         "main"
-        "footer"
-    ;
+        "footer";
     grid-template-rows: 200px 1fr 75px;
     background-color: #134c8f;
 }
@@ -33,7 +32,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 1rem;
-
 }
 
 #bgparticles canvas {
@@ -41,7 +39,6 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-
 }
 
 .Game {
@@ -67,16 +64,11 @@ body {
     font-family: "Anonymous pro", monospace;
     font-size: 25px;
     color: #69ffff;
-
 }
 
 .number {
     margin-right: 10px;
     display: inline-block;
-    
-    
-
-
 }
 
 .titleGames {
@@ -90,7 +82,6 @@ body {
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
-
 }
 
 .line-1 {
@@ -109,20 +100,27 @@ body {
     border-right: 2px solid #69ffff;
 }
 
-
 .anim-typewriter {
     animation: typewriter 8s steps(88) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
-    from {width: 0;}
-    to {width: 24em;}
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
 }
 
 @keyframes blinkTextCursor {
-    from {border-right-color: #69ffff;}
-    to { border-right-color: transparent;}
+    from {
+        border-right-color: #69ffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .Button .btn {
@@ -175,7 +173,11 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
     transform: skewX(45deg) translate(0);
     transition: 0.5s;
     filter: blur(0px);
@@ -200,8 +202,7 @@ body {
 
 .Button .btn:hover::before
 
-/*lightup button*/
-    {
+/*lightup button*/ {
     bottom: 0;
     height: 50%;
     width: 80%;
@@ -223,8 +224,7 @@ body {
 
 .Button .btn:hover::after
 
-/*lightup button*/
-    {
+/*lightup button*/ {
     top: 0;
     height: 50%;
     width: 80%;
