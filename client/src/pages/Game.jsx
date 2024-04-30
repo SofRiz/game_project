@@ -4,12 +4,12 @@ import Carousel from "../components/Carousel/Carousel"
 import Number from "../components/CountNumber/Count"
 import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
 import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation"
+import Typewriter from "../components/Typewriter"
 import gameService from "../services/game.service"
 
 const Game = () => {
     const [game, setGame] = useState(null)
     const { game_id } = useParams()
-    const [titleLoaded, setTitleLoaded] = useState(false)
 
     useEffect(() => {
         gameService
@@ -24,8 +24,7 @@ const Game = () => {
 
     return (
         <main className="main">
-            <h1 className="line-1 anim-typewriter">{game.tituloHome}</h1>
-
+            <Typewriter text={game.tituloHome} />
             <div className="double-column">
                 <JustifiedExample game={game} />
                 <Carousel game={game} />
