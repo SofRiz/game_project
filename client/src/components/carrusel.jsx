@@ -24,7 +24,7 @@ const JustifiedExample = () => {
             <Tab className="tabla__containerinfo" eventKey="Asignatura" title="Asignatura">
                 <p className="tabla__info">Tab content for Loooonger Tab</p>
             </Tab>
-            <Tab className="tabla__containerinfo" eventKey="Descripcion" title="Descripcion">
+            <Tab className="tabla__containerinfo" eventKey="Descripcion" title="Descripción">
                 <p className="tabla__info">En un campo de prácticas sumido en el desorden y la confusion, 
                 tienes que encontrar y colocar las partes de los EPIs utilizados en la extincion de incendios forestales.</p>
             </Tab>

@@ -44,6 +44,10 @@ body {
 
 }
 
+#Tab {
+    font-family: "Anonymous pro", monospace;
+}
+
 .Game {
     background-color: #0a2648;
 }
@@ -95,21 +99,22 @@ body {
     border-right: 2px solid #69ffff;
 }
 
-
-.anim-typewriter {
-    animation: typewriter 8s steps(88) 1s 1 normal both,
-        blinkTextCursor 500ms steps(44) infinite normal;
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #69ffff;}
+  to{border-right-color: transparent;}
 }
 
-@keyframes typewriter {
-    from {width: 0;}
-    to {width: 24em;}
-}
 
-@keyframes blinkTextCursor {
-    from {border-right-color: #69ffff;}
-    to { border-right-color: transparent;}
-}
+
 
 .Button .btn {
     position: relative;
