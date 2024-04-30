@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react"
+import Tab from "react-bootstrap/Tab"
+import Tabs from "react-bootstrap/Tabs"
 import { useParams } from "react-router-dom"
+import Carousel from "../components/Carousel/Carousel"
+import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
 import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation"
-import { Carrusel, JustifiedExample } from "../components/carrusel"
 import gameService from "../services/game.service"
 
 const Game = () => {
@@ -16,15 +19,16 @@ const Game = () => {
     }, [game_id])
 
     if (!game) {
-        return <p>Loading.....</p>
+        return <p>Loading...</p>
     }
 
     return (
         <main className="main">
             <h1 className="line-1 anim-typewriter">{game.tituloHome}</h1>
+
             <div className="double-column">
-                <JustifiedExample />
-                <Carrusel />
+                <JustifiedExample game={game} />
+                <Carousel game={game} />
             </div>
             <label className="contador">
                 {" "}
