@@ -14,7 +14,7 @@ const Carousel = ({ game }) => {
     return (
         <section className="carrusel">
             {imagesToDisplay.map((imageUrl, index) => (
-                <img key={index} src={imageUrl} alt={`Image ${index + 1}`} />
+                <img className="img__carrusel" key={index} src={imageUrl} alt={`Image ${index + 1}`} />
             ))}
         </section>
     )
