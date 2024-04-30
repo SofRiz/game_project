@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react"
-import Tab from "react-bootstrap/Tab"
-import Tabs from "react-bootstrap/Tabs"
 import { useParams } from "react-router-dom"
 import Carousel from "../components/Carousel/Carousel"
+import Number from "../components/CountNumber/Count"
 import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
 import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation"
 import gameService from "../services/game.service"
@@ -10,6 +9,7 @@ import gameService from "../services/game.service"
 const Game = () => {
     const [game, setGame] = useState(null)
     const { game_id } = useParams()
+    const [titleLoaded, setTitleLoaded] = useState(false)
 
     useEffect(() => {
         gameService
@@ -30,16 +30,26 @@ const Game = () => {
                 <JustifiedExample game={game} />
                 <Carousel game={game} />
             </div>
-            <label className="contador">
-                {" "}
-                Duración:
-                <span className="number">
-                    {" "}
-                    <Number n={10} />{" "}
-                </span>
-                Minutos
-            </label>
-            <ProgressBarAnimation />
+            <div className="cont-anim">
+                <ProgressBarAnimation />
+                <div className="count">
+                    <label className="contador">
+                        {" "}
+                        Duración:
+                        <span className="number">
+                            {" "}
+                            <Number n={10} />{" "}
+                        </span>
+                        Minutos
+                    </label>
+                </div>
+                <div className="Button">
+                    <div className="btn">
+                        {" "}
+                        <a href="">Comenzar</a>
+                    </div>
+                </div>
+            </div>
         </main>
     )
 }

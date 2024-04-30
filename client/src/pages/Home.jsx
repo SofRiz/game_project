@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import Image1 from "../assets/Interfaces/Interfaz GAME/Minuaturas carrusel/Ascensor/Ascensor_2.png"
 import Background from "../components/Background/Background"
 import gameService from "../services/game.service"
 
@@ -32,7 +31,7 @@ const Home = () => {
                 <Link key={game._id} to={`/${game._id}`}>
                     <Row className="fila1">
                         <Col className="columna1">
-                            <div className="p-3">
+                            <div>
                                 {game.imageUrls &&
                                     game.imageUrls.length > 0 && (
                                         <img

@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body {
+    background-color: #0a2648;
+}
+
 .app {
     text-align: center;
     min-height: 100vh;
@@ -38,21 +44,52 @@
 
 }
 
-.contador{
+.Game {
     background-color: #0a2648;
-    border-radius: 800px;
+}
+
+.count {
+    margin-left: 0px;
+}
+
+.cont-anim {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contador {
     padding: 10px;
     display: flexbox;
     align-items: center;
-    font-family: "Roboto Mono" ;
+    font-family: "Anonymous pro", monospace;
     font-size: 25px;
-    margin-left: 10px;
     color: #69ffff;
-  
+
 }
-.number{
+
+.number {
     margin-right: 10px;
     display: inline-block;
+    
+    
+
+
+}
+
+.titleGames {
+    font-family: "Roboto Mono";
+    font-size: 25px;
+    color: #69ffff;
+    text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
 
 }
 
@@ -60,39 +97,144 @@
     position: relative;
     top: 20%;
     width: 24em;
-    margin: 0 auto;  
+    margin: 0 auto;
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: "Roboto Mono";
+    font-family: "Anonymous pro", monospace;
     color: #69ffff;
-    text-shadow: 2px 2px 4px rgba(11, 42, 88, 0.5);
+    text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
+    border-right: 2px solid #69ffff;
 }
 
-/* Animation */
+
 .anim-typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 8s steps(88) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 24em;
-    }
+    from {width: 0;}
+    to {width: 24em;}
 }
 
 @keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
+    from {border-right-color: #69ffff;}
+    to { border-right-color: transparent;}
+}
 
-    to {
-        border-right-color: transparent;
-    }
+.Button .btn {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #69ffff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+    font-family: "Anonymous pro", monospace;
+}
+
+.Button .btn:hover a {
+    letter-spacing: 3px;
+    color: #0a2648;
+}
+
+.Button .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+}
+
+.Button .btn:hover a::before {
+    transform: skewX(45deg) translate(200px);
+}
+
+.Button .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.Button .btn:hover::before
+
+/*lightup button*/
+    {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.Button .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.Button .btn:hover::after
+
+/*lightup button*/
+    {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.Button .btn:nth-child(1)::before,
+/*chnage 1*/
+.Button .btn:nth-child(1)::after {
+    background: #69ffff;
+    box-shadow: 0 0 5px #69ffff, 0 0 15px #69ffff, 0 0 30px #69ffff,
+        0 0 60px #69ffff;
 }

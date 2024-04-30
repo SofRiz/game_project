@@ -1,20 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 h2{
-    font-family: "Roboto Mono";
+    font-family: "Anonymous pro", monospace;
     font-size: 20px;
     color: #69ffff;
 }
 
 .container{
-    width: 180px;
+    width: 600px;
     margin: 20px;
     padding-bottom: 5px; 
     border-radius: 5px;
     background-color: black;
    
+   
 }
 
 .progressBarWrapper {
     margin-bottom: 5px;
-    font-family: "Roboto Mono";
+    font-family: "Anonymous pro", monospace;
   
 }
