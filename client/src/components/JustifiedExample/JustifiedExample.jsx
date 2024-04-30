@@ -32,7 +32,7 @@ const JustifiedExample = ({ game }) => {
                 <Tab
                     className="tabla__containerinfo"
                     eventKey="Descripcion"
-                    title="Descripcion"
+                    title="Descripción"
                 >
                     <p className="tabla__info">{game.descripcion}</p>
                 </Tab>

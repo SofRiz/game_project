@@ -42,6 +42,17 @@ body {
     position: absolute;
 }
 
+
+
+
+
+.tabla {
+    font-family: "Anonymous pro", monospace;
+    background-color: #69ffff;
+    color: #0a2648;
+}
+
+
 .Game {
     background-color: #0a2648;
 }
@@ -116,16 +127,11 @@ body {
     }
 }
 
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: #69ffff;
-    }
+@keyframes blinkTextCursor{
+  from{border-right-color: #69ffff;}
+  to{border-right-color: transparent;}
 
-    to {
-        border-right-color: transparent;
-    }
 }
-
 .Button .btn {
     position: relative;
     top: 0;
