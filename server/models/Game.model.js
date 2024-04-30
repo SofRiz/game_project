@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose")
+const { type } = require("os")
 
 const gameSchema = new Schema(
     {
@@ -26,9 +27,19 @@ const gameSchema = new Schema(
             type: String,
             required: true,
         },
-        imagenes: {
-            type: [String],
+        dificultad: {
+            type: String,
+            required: true,
         },
+        duracion: {
+            type: Number,
+            required: true,
+        },
+        imageUrls: [
+            {
+                type: String,
+            },
+        ],
     },
     {
         timestamps: true,

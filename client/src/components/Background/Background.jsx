@@ -61,7 +61,7 @@ const Background = (props) => {
         },
         links: {
           color: "#FFFFFF",
-          distance: 350,
+          distance: 250,
           enable: true,
           opacity: 0.3,
           width: 1,
@@ -81,7 +81,7 @@ const Background = (props) => {
           density: {
             enable: true,
           },
-          value: 20,
+          value: 50,
         },
         opacity: {
           value: 1.0,
