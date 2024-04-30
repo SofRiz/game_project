@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Carousel from "../components/Carousel/Carousel"
 import Number from "../components/CountNumber/Count"
 import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
@@ -43,12 +43,12 @@ const Game = () => {
                         Minutos
                     </label>
                 </div>
-                <div className="Button">
+                <Link className="Button" to={`/games`}>
                     <div className="btn">
                         {" "}
                         <a href="">Comenzar</a>
                     </div>
-                </div>
+                </Link>
             </div>
         </main>
     )
