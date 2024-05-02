@@ -42,16 +42,11 @@ body {
     position: absolute;
 }
 
-
-
-
-
 .tabla {
     font-family: "Anonymous pro", monospace;
     background-color: #69ffff;
     color: #0a2648;
 }
-
 
 .Game {
     background-color: #0a2648;
@@ -83,10 +78,55 @@ body {
     display: inline-block;
 }
 
-.titleGames {
+.typewriter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter-text {
+    color: #69ffff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "Anonymous pro", monospace;
+}
+
+.typewriter-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+/* .titleGame {
+    color: red;
+    border-right: 3px solid;
+    white-space: nowrap;
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+} */
+
+/* .titleGames {
     font-family: "Roboto Mono";
     font-size: 25px;
-    color: #69ffff;
+    color: red;
     text-shadow: 5px 5px 6px rgba(71, 79, 90, 0.5);
     width: 100%;
     display: flex;
@@ -94,9 +134,9 @@ body {
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
-}
+} */
 
-.line-1 {
+/* .line-1 {
     position: relative;
     top: 20%;
     width: 24em;
@@ -115,9 +155,9 @@ body {
 .anim-typewriter {
     animation: typewriter 8s steps(88) 1s 1 normal both,
         blinkTextCursor 500ms steps(44) infinite normal;
-}
+} */
 
-@keyframes typewriter {
+/* @keyframes typewriter {
     from {
         width: 0;
     }
@@ -127,11 +167,15 @@ body {
     }
 }
 
-@keyframes blinkTextCursor{
-  from{border-right-color: #69ffff;}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #69ffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+} */
 
-}
 .Button .btn {
     position: relative;
     top: 0;
@@ -182,9 +226,11 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to left,
-            rgba(255, 255, 255, 0.15),
-            transparent);
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
     transform: skewX(45deg) translate(0);
     transition: 0.5s;
     filter: blur(0px);
@@ -209,8 +255,7 @@ body {
 
 .Button .btn:hover::before
 
-/*lightup button*/
-    {
+/*lightup button*/ {
     bottom: 0;
     height: 50%;
     width: 80%;
@@ -232,8 +277,7 @@ body {
 
 .Button .btn:hover::after
 
-/*lightup button*/
-    {
+/*lightup button*/ {
     top: 0;
     height: 50%;
     width: 80%;
