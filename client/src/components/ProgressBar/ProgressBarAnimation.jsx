@@ -32,7 +32,8 @@ const ProgressBarAnimation = () => {
                 <ProgressBar
                     now={greenWidth}
                     variant="success"
-                    label={`${greenWidth.toFixed(0)}%`}
+                    
+                  
                 />
             </div>
             <div className="progressBarWrapper">

@@ -26,6 +26,7 @@ const Home = () => {
 
     return (
         <Container className="contenedor">
+            
             <Background id="bgparticles" />
             {games.map((game) => (
                 <Link key={game._id} to={`/${game._id}`}>
