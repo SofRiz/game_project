@@ -77,17 +77,23 @@ body {
 }
 
 .typewriter-text {
-    animation: blink 0.5s step-end infinite alternate;
     color: #69ffff;
-    border-right: 2px solid;
-    margin-right: 2px;
+    text-align: center;
     letter-spacing: 2px;
     font-family: "Anonymous pro", monospace;
 }
 
+.typewriter-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
 @keyframes blink {
-    50% {
-        border-color: transparent;
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
     }
 }
 

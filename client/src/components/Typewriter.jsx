@@ -17,7 +17,7 @@ const Typewriter = ({ text }) => {
 
     return (
         <div className="typewriter-container">
-            <h1 className="typewriter-text blink">{displayText}</h1>
+            <h1 className="typewriter-text">{displayText}</h1>
         </div>
     )
 }
