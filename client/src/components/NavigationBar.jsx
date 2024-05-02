@@ -1,18 +1,23 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { Container, Navbar } from "react-bootstrap"
-import logo from "../assets/Logo-Color.ico"
+import { Canvas } from 'react-three-fiber'
+import { Escudo } from "../components/Logo3D/Escudo_universae"
+import { OrbitControls } from '@react-three/drei'
 
 const NavigationBar = () => {
     return (
         <Navbar>
             <Container className="container__logo">
                 <Navbar.Brand href="/">
-                    <img
-                        src={logo}
-                        className="d-inline-block align-top logo"
-                        alt="Logo Universae"
-                    />
-                    <img src="" alt="" />
+                    <div style={{ width: '140px', height: '115px' }}>
+                        <Canvas camera={{ zoom: '35', position: [0, 100, 0] }}>
+                            <ambientLight intensity={3} />
+                            <Suspense fallback={null}>
+                                <Escudo/>
+                            </Suspense>
+                            <OrbitControls />
+                        </Canvas>
+                    </div>
                 </Navbar.Brand>
             </Container>
         </Navbar>
