@@ -19,7 +19,17 @@ export function Escudo(props) {
             <mesh
                 geometry={nodes.mid_high.geometry}
                 material={materials.blue_plastic}
+                position={[0, -0.01, 0]}
+            />
+            <mesh
+                geometry={nodes.mid_high.geometry}
+                material={materials.blue_plastic}
                 position={[0, 0.114, 0]}
+            />
+            <mesh
+                geometry={nodes.u_high.geometry}
+                material={materials.Emission}
+                position={[0.002, -0.23, -0.006]}
             />
             <mesh
                 geometry={nodes.u_high.geometry}
