@@ -3,10 +3,9 @@ import { Link, useParams } from "react-router-dom"
 import Carousel from "../components/Carousel/Carousel"
 import Number from "../components/CountNumber/Count"
 import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
-import ProgressBarAnimation from "../components/ProgressBar/ProgressBarAnimation"
 import Typewriter from "../components/Typewriter"
 import gameService from "../services/game.service"
-
+import Slider from "../components/Slider/Slider"
 
 
 const Game = () => {
