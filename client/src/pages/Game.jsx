@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel/Carousel"
 import Number from "../components/CountNumber/Count"
 import JustifiedExample from "../components/JustifiedExample/JustifiedExample"
 import gameService from "../services/game.service"
+import Slider from "../components/Slider/Slider"
 
 
 
