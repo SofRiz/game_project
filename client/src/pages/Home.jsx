@@ -4,8 +4,14 @@ import { Link } from "react-router-dom"
 import Background from "../components/Background/Background"
 import gameService from "../services/game.service"
 
+
+
+
+
+
 const Home = () => {
     const [games, setGames] = useState([])
+   
 
     useEffect(() => {
         fetchGames()
@@ -25,29 +31,28 @@ const Home = () => {
     }
 
     return (
-        <Container className="contenedor">
-            <Background id="bgparticles" />
-            {games.map((game) => (
-                <Link key={game._id} to={`/${game._id}`}>
-                    <Row className="fila1">
-                        <Col className="columna1">
-                            <div>
-                                {game.imageUrls &&
-                                    game.imageUrls.length > 0 && (
-                                        <img
-                                            src={game.imageUrls[0]}
-                                            className="img"
-                                            alt={game.tituloHome}
-                                        />
-                                    )}
-                            </div>
-                            <div className="text">{game.tituloHome}</div>
-                        </Col>
-                    </Row>
-                </Link>
-            ))}
-        </Container>
-    )
+      <Container className="contenedor">
+       <Background id="bgparticles" />
+         {games.map((game) => (
+          <Link key={game._id} to={`/${game._id}`}>
+            <Row className="fila1">
+              <Col className="columna1">
+                <div>
+                  {game.imageUrls && game.imageUrls.length > 0 && (
+                    <img
+                      src={game.imageUrls[0]}
+                      className="img"
+                      alt={game.tituloHome}
+                    />
+                  )}
+                </div>
+                <div className="text">{game.tituloHome}</div>
+              </Col>
+            </Row>
+          </Link>
+        ))}
+      </Container>
+    );
 }
 
 export default Home

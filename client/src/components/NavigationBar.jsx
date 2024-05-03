@@ -7,6 +7,7 @@ import { Escudo } from "../components/Logo3D/Escudo_universae"
 
 
 
+
 const NavigationBar = () => {
     return (
         <Navbar>
