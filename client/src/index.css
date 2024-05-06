@@ -222,4 +222,25 @@
         left: 0px;
         margin-bottom: 2rem;
     }
+
+    .nivel.dif,
+    .nivel.fac{
+        font-size: 18px;
+    }
+
+    .RS{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .count{
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .cont-anim{
+        margin-top: 50px;
+    }
 }
