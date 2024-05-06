@@ -52,15 +52,37 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 20px;
+    animation: float 6s ease-in-out infinite;
 }
 
-
+@keyframes float {
+	0% {
+		box-shadow: 5px 5px 15px 0px rgba(182,255,249,0.3);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 5px 5px 15px 0px rgba(182,255,249,0.3);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 5px 5px 15px 0px rgba(182,255,249,0.3);
+		transform: translatey(0px);
+	}
+}
 
 .fila1 {
     margin-bottom: 20px;
+    animation: cargaInicial 3s linear;
 }
 
-
+@keyframes cargaInicial{
+    0%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
 .img {
     width: 100%;
@@ -96,7 +118,22 @@
     width: 100px;
 }
 
+.footer{
+    overflow: hidden;
+}
 
+.iconos{
+    animation: cargaInicial2 4s linear;
+}
+
+@keyframes cargaInicial2{
+    0%{
+        transform: translatey(1000%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 
 /*Pagina del juego (eliminar?)
 .games__title {
@@ -151,8 +188,6 @@
         gap: 15px;
         justify-content: center;
         align-items: center;
-
-
     }
 
     .line-1 {
