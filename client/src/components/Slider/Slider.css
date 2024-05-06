@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.barra {
+    position: relative;
+    width: 18rem;
+    height: 2rem;
+    background: #69ffff ;
+    border-radius: 15px;
+   
+}
+
+
+.control-desli {
+    position: absolute;
+    left:0;
+    width: 3rem;
+    height: 2rem;
+    background: #69ffff;
+    box-shadow: 0 0 5px #69ffff, 0 0 15px #69ffff, 0 0 30px #69ffff,
+            0 0 60px #69ffff;
+   border: 2px solid #0a2648;
+   border-radius: 15px;
+    top: 50%;
+     transform: translateY(-50%);
+ 
+}
+
+
+.nivel {
+    font-size: 32px;
+    position: absolute;
+    top: 60px;
+    color: aqua;
+    font-family: "Anonymous pro", monospace;
+
+}
+
+
+
+
+.nivel.dif {
+    right: 0;
+    transform: translateX(0%);
+}
+

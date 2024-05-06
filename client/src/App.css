@@ -52,11 +52,22 @@ body {
     background-color: #0a2648;
 }
 
+.RS {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+
 .count {
-    margin-left: 0px;
+    margin-left: 7rem;
+    border: 1px solid #69ffff;
+    border-radius: 15px;
+    display: flex;
 }
 
 .cont-anim {
+    margin-top: 100px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -69,7 +80,7 @@ body {
     display: flexbox;
     align-items: center;
     font-family: "Anonymous pro", monospace;
-    font-size: 25px;
+    font-size: 20px;
     color: #69ffff;
 }
 
@@ -297,3 +308,6 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+

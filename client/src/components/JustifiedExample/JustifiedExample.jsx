@@ -1,6 +1,7 @@
 import Tab from "react-bootstrap/Tab"
 import Tabs from "react-bootstrap/Tabs"
 
+
 const JustifiedExample = ({ game }) => {
     if (!game) {
         return <p>Loading......</p>
@@ -38,7 +39,10 @@ const JustifiedExample = ({ game }) => {
                 </Tab>
             </Tabs>
         </div>
+      
     )
 }
+
+
 
 export default JustifiedExample
